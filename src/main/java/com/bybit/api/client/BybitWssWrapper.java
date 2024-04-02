@@ -19,14 +19,14 @@ import java.util.List;
 
 public class BybitWssWrapper {
 
+    private String key;
+    private String secret;
+
     private WebsocketMessageHandler messageHandler;
     private String maxAliveTime;
 
     private WebsocketClient client;
 
-    private String key;
-
-    private String secret;
 
     public BybitWssWrapper(String key, String secret, Boolean isPrivate) {
         if (isPrivate) {
